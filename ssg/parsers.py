@@ -37,7 +37,7 @@ class ResourceParser(Parser):
         self.copy(path, source, dest)
 
 
-class MarkdownParser:
+class MarkdownParser(Parser):
 
     extensions = [".md", ".markdown"]
 
@@ -50,7 +50,7 @@ class MarkdownParser:
         )
 
 
-class ReStructuredTextParser:
+class ReStructuredTextParser(Parser):
 
     extensions: List[str] = [".rst"]
 
